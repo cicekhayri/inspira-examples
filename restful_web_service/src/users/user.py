@@ -17,10 +17,3 @@ class User(Base):
         Define a string representation for the User model.
         """
         return f"<User(id={self.id}, name={self.name}, email={self.email}>"
-
-    def serialize(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'email': self.email
-        }
