@@ -7,11 +7,11 @@ from inspira.requests import Request
 @path("/greeting")
 class GreetingController:
 
-    @get("/")
+    @get()
     async def index(self, request: Request):
         return TemplateResponse("index.html")
 
-    @post("/")
+    @post()
     async def post_form(self, request: Request):
         form = await request.form()
 
