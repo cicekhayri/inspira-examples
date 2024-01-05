@@ -16,5 +16,5 @@ config['SESSION_MAX_AGE'] = 3600
 
 app = Inspira(secret_key="UXkuLh6o9VuNz5d7KSnxYW_y4zau2H3u0UEZMhWKsFsecoGhel", config=config)
 
-session = SessionMiddleware(app.secret_key)
+session = SessionMiddleware()
 app.add_middleware(session)
